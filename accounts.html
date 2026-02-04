@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="header_container container">
+                <div class="header_contact">
+                    <span>(+01) - 2547 - 3452</span>
+                    <span>Our location</span>
+                </div>
+                <p class="header_alert-news">Super value Deals - Save more with coupons</p>
+                <a href="login-register.html" class="header_top-action">Log In / Sign Up</a>
+            </div>
+        </div>
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                <img src="assets/img/logo.svg" alt="" class="nav_logo-img">
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_menu-top">
+                    <a href="index.html" class="nav_menu-logo">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                    <div class="nav_close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="shop.html" class="nav_link">Shop</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="accounts.html" class="nav_link active-link">My Account</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="compare.html" class="nav_link">Compare</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="login-register.html" class="nav_link">Login</a>
+                    </li>
+                </ul>
+                <div class="header_search">
+                    <input type="text" placeholder="Search for items..." class="form_input">
+                    <button class="search_btn">
+                        <img src="assets/img/search.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="header_user-actions">
+                <a href="wishlist.html" class="header_action-btn">
+                    <img src="assets/img/icon-heart.svg" alt="">
+                    <span class="count count1"></span>
+                </a>
+                <a href="cart.html" class="header_action-btn">
+                    <img src="assets/img/icon-cart.svg" alt="">
+                    <span class="count count2"></span>
+                </a>
+                <div class="header_user-btn nav_toggle" id="nav-toggle">
+                    <img src="assets/img/menu-burger.svg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="breadcrumb">
+            <ul class="breadcrumb_list flex container">
+                <li><a href="index.html" class="breadcrumb_link">Home</a></li>
+                <li><span class="breadcrumb_link">></span></li>
+                <li><a href="shop.html" class="breadcrumb_link">Shop</a></li>
+                <li><span class="breadcrumb_link">></span></li>
+                <li><span class="breadcrumb_link">MyProfile</span></li>
+            </ul>
+        </section>
+        <section class="accounts section-lg">
+            <div class="accounts_container container grid">
+                <div class="account_tabs">
+                    <p class="account_tab active-tab" data-target="#dashboard">
+                        <i class="fi fi-rs-settings-sliders"></i>Dashboard
+                    </p>
+                    <p class="account_tab" data-target="#orders">
+                        <i class="fi fi-rs-shopping-bag"></i>Orders
+                    </p>
+                    <p class="account_tab" data-target="#update-profile">
+                        <i class="fi fi-rs-user"></i>Update Profile
+                    </p>
+                    <p class="account_tab" data-target="#address">
+                        <i class="fi fi-rs-marker"></i>My Address
+                    </p>
+                    <p class="account_tab" data-target="#change-password">
+                        <i class="fi fi-rs-user"></i>Change Password
+                    </p>
+                    <a href="login-register.html">
+                        <p class="account_tab login_tab">
+                            <i class="fi fi-rs-exit"></i>Logout
+                        </p>
+                    </a>
+                </div>
+                <div class="tabs_content">
+                    <div class="tab_content active-tab" content id="dashboard">
+                        <h3 class="tab_header">Hello Rosie!</h3>
+                        <div class="tab_body">
+                            <p class="tab_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum delectus excepturi cum nam ab maxime at culpa laudantium optio, nulla, ipsum quam quis quod necessitatibus iste sit, rem quo?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="orders">
+                        <h3 class="tab_header">Your Orders</h3>
+                        <div class="tab_body">
+                            <table class="placed_order-table">
+                                <tr>
+                                    <th>Orders</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Total</th>
+                                    <th>Actions</th>
+                                </tr>
+
+                                <tr>
+                                    <td>#1376</td>
+                                    <td>April 25, 2025</td>
+                                    <td>Processing</td>
+                                    <td>$246.00</td>
+                                    <td><a href="cart.html" class="view_order">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1056</td>
+                                    <td>June 25, 2025</td>
+                                    <td>Completed</td>
+                                    <td>$126.00</td>
+                                    <td><a href="cart.html" class="view_order">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#2436</td>
+                                    <td>March 25, 2025</td>
+                                    <td>Completed</td>
+                                    <td>$206.00</td>
+                                    <td><a href="cart.html" class="view_order">View</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="update-profile">
+                        <h3 class="tab_header">Update Profile</h3>
+                        <div class="tab_body">
+                            <form action="" class="form grid">
+                                <input type="text" name="username" placeholder="Username" class="form_input form_input-name">
+                                <p class="error_message error_message-name">Please enter your name!</p>
+                                <p class="confirm_message">Updated Successfully!</p>
+                                <div class="form_btn form_update-btn">
+                                    <button type="submit" class="btn btn-sm">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="address">
+                        <h3 class="tab_header">Shipping Address</h3>
+                        <div class="tab_body">
+                            <div class="current_address">
+                                <address class="address">
+                                    <span class="states">3522 Interstate</span> <br><span class="main_streets">75 Business Spur,</span> <br><span class="sub_streets">Sault Ste. Marie,</span> <br><span class="roads">MI 4765</span>
+                                </address>
+                                <p class="city">New York</p>
+                                <a href="#address-update" class="edit">Edit</a>
+                            </div>
+                            <form action="" id="address-update" class="form flex address_update">
+                                <input type="text" name="state" placeholder="3522 Interstate" class="form_input state">
+                                <input type="text" name="main_street" placeholder="75 Business Spur" class="form_input main_street">
+                                <input type="text" name="sub_street" placeholder="Sault Ste. Marie" class="form_input sub_street">
+                                <input type="text" name="road" placeholder="MI 4765" class="form_input road">
+                                <input type="text" name="cities" placeholder="New York" class="form_input cities">
+                                <button type="button" class="btn btn-sm save_btn">Save the Change</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="change-password">
+                        <h3 class="tab_header">Change Password</h3>
+                        <div class="tab_body">
+                            <form action="" class="form grid">
+                                <div>
+                                    <div class="pass">
+                                        <input type="password" name="password" placeholder="Current Password" class="form_input">                                
+                                        <i class="fi fi-rs-eye show_pass"></i>
+                                        <i class="fi fi-rs-crossed-eye hide_pass"></i>
+                                        <p class="error_message">Please enter your Current password!</p>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <div class="pass">
+                                        <input type="password" name="password" placeholder="New Password" class="form_input">
+                                        <i class="fi fi-rs-eye show_pass"></i>
+                                        <i class="fi fi-rs-crossed-eye hide_pass"></i>
+                                        <p class="error_message">Please enter your New password!</p>
+                                    </div>        
+                                </div>
+                                
+                                <div>
+                                    <div class="pass">
+                                        <input type="password" name="password" placeholder="Confirm Password" class="form_input">
+                                        <i class="fi fi-rs-eye show_pass"></i>
+                                        <i class="fi fi-rs-crossed-eye hide_pass"></i>
+                                        <p class="error_message">Please enter your Confirm password!</p>
+                                    </div>
+                                </div>
+                                
+                                <p class="confirm_message confirm_message-name">Updated Successfully!</p>
+                                <div class="form_btn form_update-btn">
+                                    <button type="submit" class="btn btn-sm">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="newsletter section">
+            <div class="newsletter_container container grid">
+                <h3 class="newsletter_title flex">
+                    <img src="assets/img/icon-email.svg" alt="" class="newslettrer_icon">
+                    Sign up to Newsletter
+                </h3>
+                <p class="newsletter_description">
+                    ...and receive $25 coupon for the first shopping.
+                </p>
+                <form action="" class="newsletter_form">
+                    <input type="text" placeholder="Enter your email.." class="newsletter_input"> 
+                    <button type="submit" class="newsletter_btn">Subscribe</button>                
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer_container grid">
+            <div class="footer_content">
+                <a href="index.html" class="footer_logo">
+                    <img src="assets/img/logo.svg" alt="" class="footer_logo-img">
+                </a>
+                <h4 class="footer_subtitle">Contact</h4>
+                <p class="footer_description">
+                    <span>Phone:</span> 562 Wellington Road,Street 32,San Francisco
+                </p>
+                <p class="footer_description">
+                    <span>Address:</span> +01 2234 4567 /(+91) 11 3421 8754
+                </p>
+                <p class="footer_description">
+                    <span>Hours:</span> 10:00 - 18:00, Mon-Sat
+                </p>
+                <div class="footer_social">
+                    <h4 class="footer_subtitle">Follow Me</h4>
+                    <div class="footer_social-links flex">
+                        <a href="">
+                            <img src="assets/img/icon-facebook.svg" alt="" class="footer_social-icon">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icon-twitter.svg" alt="" class="footer_social-icon">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icon-instagram.svg" alt="" class="footer_social-icon">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icon-pinterest.svg" alt="" class="footer_social-icon">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icon-youtube.svg" alt="" class="footer_social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">Address</h3>
+                <ul class="footer_links">
+                    <li><a href="" class="footer_link">About Us</a></li>
+                    <li><a href="" class="footer_link">Delivery Information</a></li>
+                    <li><a href="" class="footer_link">Privacy Policy</a></li>
+                    <li><a href="" class="footer_link">Terms & Conditions</a></li>
+                    <li><a href="" class="footer_link">Contact Us</a></li>
+                    <li><a href="" class="footer_link">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">My Account</h3>
+                <ul class="footer_links">
+                    <li><a href="" class="footer_link">Sign In</a></li>
+                    <li><a href="" class="footer_link">View Cart</a></li>
+                    <li><a href="" class="footer_link">My Wishlist</a></li>
+                    <li><a href="" class="footer_link">Track my order</a></li>
+                    <li><a href="" class="footer_link">Help</a></li>
+                    <li><a href="" class="footer_link">Order</a></li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3 class="footer_title">Secured Payment Getways</h3>
+                <img src="assets/img/payment-method.png" alt="" class="payment_img">
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p class="copyright">&copy; 2025 Evara. All rights reserved</p>
+            <span class="designer">Designed by Crypticalcoder</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
