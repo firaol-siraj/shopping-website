@@ -1,16 +1,24 @@
-# EvaraShop E-Commerce
+# EvaraShop E-Commerce 
 
-A frontend e-commerce project built to master advanced CSS layouts and JavaScript logic.
+🚀 Live Demo : (https://firaol-siraj.github.io/shopping-website/) | 📂 Source Code : (https://github.com/firaol-siraj/shopping-website)
 
-## 🛠 Key Features
-* Dynamic Product Display.
-* Functional Shopping Cart (Add/Remove logic).
-* Fully responsive navigation and grid system.
+A modern frontend e-commerce interface built to master advanced CSS layouts and complex JavaScript logic.
 
-## 🧠 Why I built this
-This project was a deep dive into **JavaScript logic**. I focused on:
-* Handling arrays of product data.
-* Writing clean, reusable functions.
-* Building a real-world UI from scratch.
+## 🛠 Tech Stack
+* **HTML5:** Semantic structure for SEO and accessibility.
+* **CSS3:** Custom layouts using Flexbox and Grid.
+* **JavaScript (ES6+):** Dynamic DOM manipulation and cart logic.
 
-*Note: This is a frontend-only project focused on UI/UX and JS logic.*
+## 🌟 Key Features
+* **Dynamic Product Rendering:** Products are injected into the UI using JavaScript.
+* **Shopping Cart Logic:** Functional Add/Remove system to practice state handling.
+* **Responsive Design:** Optimized for a seamless experience across mobile and desktop.
+
+## 🧠 Learning Objectives
+This project was a deep dive into **JavaScript fundamentals**. I focused on:
+* Manipulating data arrays to display products.
+* Creating reusable functions for a cleaner codebase.
+* Building a real-world UI from scratch to understand user flow.
+
+---
+*Developed as a core project to strengthen my Frontend Development foundation.*
